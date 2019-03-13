@@ -1,0 +1,14 @@
+body {
+    @include light;
+    color: $text-color;
+}
+
+.button-o {
+    border: 2px solid $primary;
+    text-transform: uppercase;
+    padding: 17px 22px;
+    font-size: 12px;
+    @include bold;
+    color: $primary;
+    background-color: transparent;
+}
