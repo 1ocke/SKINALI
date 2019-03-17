@@ -12,3 +12,12 @@ body {
     color: $primary;
     background-color: transparent;
 }
+
+.button {
+    padding: 25px 45px;
+    text-transform: uppercase;
+    border: none;
+    background-color: $primary;
+    color: #ffffff;
+    @include bold;
+}

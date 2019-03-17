@@ -1,4 +1,11 @@
 .navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    background-color: #ffffff;
+
     &-wrap {
         display: flex;
         align-items: center;
@@ -29,6 +36,32 @@
 }
 
 .menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    padding: 16px;
+    background-color: $primary;
+    transform: translateY(-100%);
+
+    &--active {
+        transform: translateX(0);
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__link {
+        font-size: 17px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
     &-button {
         display: flex;
         flex-direction: column;

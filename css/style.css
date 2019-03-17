@@ -39,6 +39,24 @@ body {
   background-color: transparent;
 }
 
+.button {
+  padding: 25px 45px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #507fe1;
+  color: #ffffff;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: #ffffff;
+}
+
 .navbar-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +89,41 @@ body {
   font-size: 14px;
   color: #7b7b79;
   text-decoration: none;
+}
+
+.menu {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  padding: 16px;
+  background-color: #507fe1;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.menu--active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu__link {
+  font-size: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .menu-button {
@@ -116,5 +169,24 @@ body {
   display: block;
   color: #7b7b79;
   font-size: 14px;
+}
+
+.hero {
+  background: #f1f1f1 url("../../img/bg-1.jpg") no-repeat center top 80px;
+  background-size: contain;
+  padding-top: 180px;
+  padding-bottom: 270px;
+}
+
+.hero__title {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.hero__subtitle {
+  display: block;
+  margin-bottom: 67px;
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
