@@ -6,6 +6,12 @@
     width: 100%;
     background-color: #ffffff;
 
+    @media (max-width: 991px) {
+        &__mobile, &__landline {
+            display: none;
+        }
+    }
+
     &-wrap {
         display: flex;
         align-items: center;
@@ -44,9 +50,11 @@
     padding: 16px;
     background-color: $primary;
     transform: translateY(-200%);
+    opacity: 0;
 
     &--active {
         transform: translateX(0);
+        opacity: 1;
     }
 
     &__nav {
@@ -110,17 +118,8 @@
         color: $text-color-light;
         font-size: 14px;
     }
-}
 
-@media (max-width: 991px) {
-    .navbar {
-        &__mobile, &__landline {
-            display: none;
-        }
-    }
-}
-@media (max-width: 576px) {
-    .logo {
+    @media (max-width: 576px) {
         display: none;
     }
 }

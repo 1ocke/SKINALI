@@ -1,12 +1,13 @@
 .hero {
-    background: #f1f1f1 url("../../img/bg-1.jpg") no-repeat center top 80px;
-    background-size: contain;
-    padding-top: 180px;
+    background: #f1f1f1 url("../../img/bg-1.jpg") no-repeat center top;
+    background-size: cover;
+    padding-top: 120px;
     padding-bottom: 270px;
+    margin-top: 80px;
 
     @media (max-width: 576px) {
-        background-size: cover;
-        background-position: top left 30%;
+        background-size: 100%;
+        background-position: top left;
     }
 
     &__title {
