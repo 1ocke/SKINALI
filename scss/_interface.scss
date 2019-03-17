@@ -11,6 +11,10 @@ body {
     @include bold;
     color: $primary;
     background-color: transparent;
+
+    @media (max-width: 576px) {
+        font-size: 10px;
+    }
 }
 
 .button {

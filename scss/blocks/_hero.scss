@@ -4,6 +4,11 @@
     padding-top: 180px;
     padding-bottom: 270px;
 
+    @media (max-width: 576px) {
+        background-size: cover;
+        background-position: top left 30%;
+    }
+
     &__title {
         font-size: 30px;
         margin-bottom: 40px;
