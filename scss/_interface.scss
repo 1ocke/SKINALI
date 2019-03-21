@@ -3,6 +3,10 @@ body {
     color: $text-color;
 }
 
+img {
+    max-width: 100%;
+}
+
 .section {
     padding: 100px 0;
 
@@ -34,6 +38,7 @@ body {
     @include bold;
     color: $primary;
     background-color: transparent;
+    text-decoration: none;
 
     @media (max-width: 576px) {
         font-size: 10px;
@@ -47,6 +52,24 @@ body {
     background-color: $primary;
     color: #ffffff;
     @include bold;
+    text-decoration: none;
+
+    &-fitting {
+        color: $primary;
+        background: #ffffff;
+    }
+
+    &-add {
+        background-color: lighten($primary, 10%);
+        color: #ffffff;
+    }
+
+    &-like {
+        background-color: $primary;
+        width: 30px;
+        height: 30px;
+        border: none;
+    }
 }
 
 .bg-secondary {
