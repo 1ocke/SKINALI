@@ -3,6 +3,29 @@ body {
     color: $text-color;
 }
 
+.section {
+    padding: 100px 0;
+
+    &-title {
+        font-size: 30px;
+        text-align: center;
+        @include bold;
+        text-transform: uppercase;
+
+        @media (max-width: 576px) {
+            font-size: 24px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 100px;
+    }
+
+    @media (max-width: 576px) {
+        padding: 60px 0;
+    }
+}
+
 .button-o {
     border: 2px solid $primary;
     text-transform: uppercase;
