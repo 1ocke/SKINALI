@@ -1,0 +1,96 @@
+.offer {
+    padding: 129px 0;
+
+    &-block {
+        background: #fff url("../img/formBg.jpg") no-repeat center right;
+        background-size: contain;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        padding: 80px;
+        margin-top: -233px;
+
+        @media (max-width: 1199px) {
+            background-position: center right -120px;
+        }
+
+        @media (max-width: 768px) {
+            background: none;
+            background-color: #ffffff;
+            padding: 40px;
+        }
+    }
+
+    &__title {
+        font-size: 25px;
+        text-transform: uppercase;
+        @include bold;
+        margin-bottom: 20px;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    &__subtitle {
+        display: block;
+        margin-bottom: 48px;
+        font-size: 21px;
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.form {
+    &__row {
+        display: flex;
+        align-items: center;
+        max-width: 900px;
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+
+            &-checkbox {
+                flex-direction: row;
+            }
+        }
+    }
+
+    &__label {
+        display: block;
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    &__group {
+        flex-basis: 33.33%;
+
+        &:last-child .form__input {
+            border-right-width: 1px;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        border-right-width: 0;
+
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+            border-right-width: 1px;
+        }
+    }
+
+    &__button {
+        height: 80px;
+        width: 100%;
+    }
+}
