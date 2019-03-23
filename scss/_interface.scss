@@ -70,6 +70,14 @@ img {
         height: 30px;
         border: none;
     }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 10px;
+    }
 }
 
 .bg-secondary {
