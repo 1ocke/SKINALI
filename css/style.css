@@ -955,7 +955,7 @@ img {
 }
 
 .contacts {
-  background-color: #f1f1f1;
+  background-color: #fafbfc;
 }
 
 .contacts-block {
@@ -1002,5 +1002,113 @@ img {
     max-width: 200px;
     margin: auto;
   }
+}
+
+.questions {
+  background-color: #fafbfc;
+}
+
+.questions__title {
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.questions-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.questions__link {
+  font-size: 24px;
+  color: #507fe1;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #262626;
+  color: #ffffff;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__title {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.footer__subtitle {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+.footer__copyright {
+  color: #767676;
+}
+
+.footer__pay-logo {
+  margin: 15px;
+}
+
+.footer__contacts {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .footer__contacts {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.footer__phone {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.footer__mail {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-social__link {
+  margin-left: 10px;
 }
 /*# sourceMappingURL=style.css.map */
