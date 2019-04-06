@@ -7,6 +7,8 @@
 // Настройки цветов
 @import 'colors';
 
+@import 'slick';
+
 // Настройки интерфейса
 @import 'interface';
 
@@ -33,6 +35,9 @@
 
 // Блок с этапами работ
 @import 'blocks/steps';
+
+// Блок с До/После
+@import 'blocks/before';
 
 // Блок с отзывами
 @import 'blocks/reviews';
