@@ -1,3 +1,5 @@
+@import 'normalize';
+
 // Базовые настройки сетки
 @import 'grid';
 
@@ -35,6 +37,8 @@
 
 // Блок с этапами работ
 @import 'blocks/steps';
+
+@import 'twentytwenty';
 
 // Блок с До/После
 @import 'blocks/before';
