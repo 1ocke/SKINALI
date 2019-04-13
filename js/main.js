@@ -44,6 +44,7 @@ $(window).load(function () {
     $(window).bind('scroll', function() {
         var windowTop = $(this).scrollTop();
         if (windowTop > reviewsTop) {
+            console.log('done');
             $('#map').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A54ac4ffd095449fff9ccb057780ee588300df92af40d5afa15ce7692e16405a1&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>');
             $(window).unbind('scroll');
         }
